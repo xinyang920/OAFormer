@@ -11,8 +11,6 @@ code will be released soon!!!
 
 
 This official repository contains the source code, prediction results, and evaluation toolbox of paper 'OAFormer: Occlusion Aware Transformer for Camouflaged Object Detection'. The technical report could be found at [arXiv](https://arxiv.org/abs/). 
-The whole benchmark results can be found at [One Drive](), [Baidu Netdisk](), or [Google Drive]().
-
 
 
 <p align="center">
@@ -49,8 +47,8 @@ By default, you can put datasets into the folder 'dataset'.
 
 By default, you can put datasets into the folder 'checkpoint'.
 
-OAFormer: [Google Drive]()
-Backbone: [Google Drive]()
+OAFormer: [Google Drive](https://drive.google.com/file/d/1kDuwHVZVvuyp4VzXUwb8vkklrq_SDpR3/view?usp=share_link)
+Backbone: [Google Drive](https://drive.google.com/file/d/1snw4TYUCD5z4d3aaId1iBdw-yUKjRmPC/view?usp=sharing)
 
 **1.3. Train.**
 ```
@@ -71,7 +69,7 @@ python eval.py
 
 ### 2.1 COD Benchmark Results:
 
-The prediction of our OAFormer can be found in [Google Drive](). Here are quantitative performance comparison.
+The prediction of our OAFormer can be found in [Google Drive](https://drive.google.com/file/d/15zRxBHQlcU-uLDHa2OfWnJeoLUf_6d2h/view?usp=share_link). Here are quantitative performance comparison.
 
 <p align="center">
     <img src="figs/Performance.png" width="700"  width="1200"/> <br />
