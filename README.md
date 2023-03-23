@@ -1,5 +1,7 @@
 # <p align=center>`OAFormer: Occlusion Aware Transformer for Camouflaged Object Detection`</p>
 
+code will be released soon!!!
+
 > **Authors:**
 > [Xin Yang](https://github.com/xinyang920),
 > Hengliang Zhu,
@@ -21,9 +23,9 @@ The whole benchmark results can be found at [One Drive](), [Baidu Netdisk](), or
 </p>
 
 
-## 1. Requirements
+## 1. Code
 
-**0. Install**
+**1.1. Requirements**
 
 ```
 Python 3.7
@@ -37,7 +39,7 @@ Apex 0.1
 ```
 
 
-**1. Download Datasets and Checkpoints.**
+**1.2. Download Datasets and Checkpoints.**
 
 - **Datasets:** 
 
@@ -50,20 +52,24 @@ By default, you can put datasets into the folder 'checkpoint'.
 OAFormer: [Google Drive]()
 Backbone: [Google Drive]()
 
-**2. Test.**
+**1.3. Train.**
+```
+python train.py
+```
+**1.4. Test.**
 ```
 python test.py
 ```
 
-**3. Eval.**
+**1.5. Eval.**
 ```
 python eval.py
 ```
 
 
-## 3. Proposed OAFormer
+## 2. Proposed OAFormer
 
-### 3.1 COD Benchmark Results:
+### 2.1 COD Benchmark Results:
 
 The prediction of our OAFormer can be found in [Google Drive](). Here are quantitative performance comparison.
 
