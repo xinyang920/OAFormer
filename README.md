@@ -88,7 +88,14 @@ Thanks [Zhirui Zhao](https://github.com/zhaozhirui) providing a friendly [codeba
 ## Reference
 You may want to cite:
 ```
-coming soon!
+@inproceedings{yang2023oaformer,
+  title={OAFormer: Occlusion Aware Transformer for Camouflaged Object Detection},
+  author={Yang, Xin and Zhu, Hengliang and Mao, Guojun and Xing, Shuli},
+  booktitle={2023 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1421--1426},
+  year={2023},
+  organization={IEEE}
+}
 ```
 
 ### License
