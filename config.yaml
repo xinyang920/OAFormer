@@ -1,0 +1,105 @@
+---
+# ———————————————————————— 通用参数 ———————————————————————— #
+# GPU设备
+CUDA_DEVICE: "0"
+# 消融实验实验 6 pvt+MA+GM(with ax) 结构
+# Number of parameter: 39.86M
+
+# ———————————————————————— 是否训练 ———————————————————————— #
+# 是否需要先训练
+start_train: False
+
+batch: 24 #24
+lr: 0.005
+# 主干网络学习率倍数
+backbone_lr_ratio: 1
+
+epoch: 90
+# 保存最后多少个epoch
+save_epoch_num: 80
+train_num_workers: 0
+val_num_workers: 0
+
+momen: 0.9
+decay: 0.0005
+resize: 416
+trainsize:
+  - 416
+#  - 704
+#  - 736
+# 断点续训:
+continue_train: False
+continue_train_pth: "./out/model-70"
+continue_train_start_epoch: 70
+
+# 是否开启验证集:
+val: True
+# 2/3 epoch后开始验证
+val_ratio: 0.3
+# ecssd 共1000张图片
+val_total: 250
+
+# 随机种子
+Random_seeds: 520
+# 权重路径
+out_path: "./out"
+# 训练集
+train_datapath: "D:/yangxin/data/cod/TrainDataset"
+val_datapath: "D:/yangxin/data/cod/CAMO"
+# ———————————————————————— 评价 ———————————————————————— #
+# 是否评价
+start_eval: True
+# 是否需要先推断
+start_test: True
+# 不需要则改成False
+method_name: False
+# 模型权重: , 不需要则改成False
+model_name: #False
+#  - "model-68"
+#  - "model-40"
+  - "model-86"
+#  - "model-87"
+#  - "model-88"
+#  - "model-89"
+#  - "model-70"
+#  - "model-75"
+#  - "model-80"
+#  - "model-85"
+#  - "model-90"
+#  - "model-95"
+#  - "model-100"
+
+
+
+# 评价保存位置:
+save_eval_csv: "../ab_v6_best.csv"
+
+
+# 权重路径:
+model_path: "./out/"
+# 图片保存路径:
+save_path: "D:/yangxin/result/"
+# 数据集路径:
+data_path: "D:/yangxin/data/cod/"
+# 推断数据集:
+data_name:
+  - "CAMO"
+  - "CHAMELEON"
+  - "COD10K"
+  - "NC4K"
+
+
+# 小数位:
+Decimal_places: 4
+# 评价指标(不能改):
+Evaluation_indicators:
+  - "S-measure"
+  - "MAE"
+  - "WFm"
+  # - "maxFm"
+  # - "meanFm"
+  # - "adpFm"
+  # - "maxEm"
+  - "meanEm"
+  # - "adpEm"
+...
