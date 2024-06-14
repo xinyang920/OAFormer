@@ -1,7 +1,5 @@
 # <p align=center>`OAFormer: Occlusion Aware Transformer for Camouflaged Object Detection`</p>
 
-code will be released soon!!!
-
 > **Authors:**
 > [Xin Yang](https://github.com/xinyang920),
 > Hengliang Zhu,
