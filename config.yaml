@@ -2,19 +2,17 @@
 # ———————————————————————— 通用参数 ———————————————————————— #
 # GPU设备
 CUDA_DEVICE: "0"
-# 消融实验实验 6 pvt+MA+GM(with ax) 结构
-# Number of parameter: 39.86M
 
 # ———————————————————————— 是否训练 ———————————————————————— #
 # 是否需要先训练
 start_train: False
 
-batch: 24 #24
+batch: 24 
 lr: 0.005
 # 主干网络学习率倍数
 backbone_lr_ratio: 1
 
-epoch: 90
+epoch: 100
 # 保存最后多少个epoch
 save_epoch_num: 80
 train_num_workers: 0
@@ -25,8 +23,6 @@ decay: 0.0005
 resize: 416
 trainsize:
   - 416
-#  - 704
-#  - 736
 # 断点续训:
 continue_train: False
 continue_train_pth: "./out/model-70"
@@ -55,24 +51,12 @@ start_test: True
 method_name: False
 # 模型权重: , 不需要则改成False
 model_name: #False
-#  - "model-68"
-#  - "model-40"
-  - "model-86"
-#  - "model-87"
-#  - "model-88"
-#  - "model-89"
-#  - "model-70"
-#  - "model-75"
-#  - "model-80"
-#  - "model-85"
-#  - "model-90"
-#  - "model-95"
-#  - "model-100"
+  - "model-90"
 
 
 
 # 评价保存位置:
-save_eval_csv: "../ab_v6_best.csv"
+save_eval_csv: "../best.csv"
 
 
 # 权重路径:
